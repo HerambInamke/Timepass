@@ -12,7 +12,15 @@ export const careers = [
       "Software Architect",
       "Engineering Manager"
     ],
-    skills: ["Programming", "Problem Solving", "System Design", "Code Review", "Technical Documentation"]
+    skills: ["Programming", "Problem Solving", "System Design", "Code Review", "Technical Documentation"],
+    roadmap: [
+      "Learn basic programming languages (e.g., Python, Java)",
+      "Understand data structures and algorithms",
+      "Get familiar with version control (e.g., Git)",
+      "Build small projects to apply knowledge",
+      "Learn about software development methodologies (e.g., Agile)",
+      "Master advanced topics (e.g., system design, architecture)"
+    ]
   },
   {
     id: 2,
@@ -27,7 +35,15 @@ export const careers = [
       "AI Research Scientist",
       "Chief Data Officer"
     ],
-    skills: ["Statistics", "Machine Learning", "Python/R", "Data Visualization", "Big Data Technologies"]
+    skills: ["Statistics", "Machine Learning", "Python/R", "Data Visualization", "Big Data Technologies"],
+    roadmap: [
+      "Learn programming basics in Python or R",
+      "Master statistics and probability fundamentals",
+      "Study machine learning algorithms and techniques",
+      "Practice with real-world datasets and competitions",
+      "Learn deep learning and neural networks",
+      "Develop expertise in a specific domain (e.g., NLP, computer vision)"
+    ]
   },
   {
     id: 3,
@@ -42,7 +58,15 @@ export const careers = [
       "Design System Lead",
       "Design Director"
     ],
-    skills: ["User Research", "Wireframing", "Prototyping", "Visual Design", "User Testing"]
+    skills: ["User Research", "Wireframing", "Prototyping", "Visual Design", "User Testing"],
+    roadmap: [
+      "Learn design fundamentals and principles",
+      "Master design tools (e.g., Figma, Adobe XD)",
+      "Study user psychology and behavior",
+      "Practice creating wireframes and prototypes",
+      "Learn to conduct user research and testing",
+      "Develop a strong portfolio of case studies"
+    ]
   },
   {
     id: 4,
@@ -57,7 +81,15 @@ export const careers = [
       "CMO",
       "Marketing Consultant"
     ],
-    skills: ["SEO", "Content Strategy", "Social Media", "Analytics", "Campaign Management"]
+    skills: ["SEO", "Content Strategy", "Social Media", "Analytics", "Campaign Management"],
+    roadmap: [
+      "Learn digital marketing fundamentals",
+      "Master SEO and content marketing techniques",
+      "Develop social media marketing skills",
+      "Study analytics and data-driven marketing",
+      "Learn paid advertising strategies (PPC, display)",
+      "Understand marketing automation and CRM systems"
+    ]
   },
   {
     id: 5,
@@ -72,7 +104,15 @@ export const careers = [
       "Finance Director",
       "CFO"
     ],
-    skills: ["Financial Modeling", "Data Analysis", "Risk Assessment", "Market Research", "Forecasting"]
+    skills: ["Financial Modeling", "Data Analysis", "Risk Assessment", "Market Research", "Forecasting"],
+    roadmap: [
+      "Learn accounting and finance fundamentals",
+      "Master financial modeling and Excel skills",
+      "Study financial statement analysis",
+      "Develop valuation and forecasting techniques",
+      "Learn risk assessment methodologies",
+      "Understand capital markets and investment strategies"
+    ]
   },
   {
     id: 6,
@@ -87,7 +127,15 @@ export const careers = [
       "Regional Director",
       "Hospital CEO"
     ],
-    skills: ["Healthcare Operations", "Policy Implementation", "Staff Management", "Budget Planning", "Compliance"]
+    skills: ["Healthcare Operations", "Policy Implementation", "Staff Management", "Budget Planning", "Compliance"],
+    roadmap: [
+      "Learn healthcare systems and terminology",
+      "Study healthcare regulations and compliance",
+      "Develop management and leadership skills",
+      "Master healthcare budgeting and finance",
+      "Understand healthcare IT systems",
+      "Learn strategic planning for healthcare organizations"
+    ]
   },
   {
     id: 7,
@@ -102,7 +150,15 @@ export const careers = [
       "Research Director",
       "Environmental Consultant"
     ],
-    skills: ["Research", "Data Analysis", "Field Work", "Report Writing", "Environmental Policy"]
+    skills: ["Research", "Data Analysis", "Field Work", "Report Writing", "Environmental Policy"],
+    roadmap: [
+      "Study environmental science fundamentals",
+      "Learn research methodologies and data collection",
+      "Develop laboratory and field work skills",
+      "Master environmental data analysis techniques",
+      "Understand environmental regulations and policy",
+      "Learn project management for scientific research"
+    ]
   },
   {
     id: 8,
@@ -117,7 +173,15 @@ export const careers = [
       "CPO",
       "Product Consultant"
     ],
-    skills: ["Product Strategy", "User Stories", "Market Analysis", "Agile", "Stakeholder Management"]
+    skills: ["Product Strategy", "User Stories", "Market Analysis", "Agile", "Stakeholder Management"],
+    roadmap: [
+      "Learn product management fundamentals",
+      "Develop user research and customer interview skills",
+      "Master agile methodologies and user stories",
+      "Study market analysis and competitive research",
+      "Learn product metrics and analytics",
+      "Develop strategic thinking and roadmap planning"
+    ]
   },
   {
     id: 9,
@@ -132,7 +196,15 @@ export const careers = [
       "CISO",
       "Security Consultant"
     ],
-    skills: ["Network Security", "Threat Analysis", "Incident Response", "Security Tools", "Risk Management"]
+    skills: ["Network Security", "Threat Analysis", "Incident Response", "Security Tools", "Risk Management"],
+    roadmap: [
+      "Learn networking and system administration basics",
+      "Study cybersecurity fundamentals and frameworks",
+      "Master security tools and technologies",
+      "Develop threat hunting and analysis skills",
+      "Learn penetration testing techniques",
+      "Understand security governance and compliance"
+    ]
   },
   {
     id: 10,
@@ -147,6 +219,13 @@ export const careers = [
       "Head of BI",
       "Data Strategy Consultant"
     ],
-    skills: ["SQL", "Data Visualization", "ETL", "Business Analysis", "Statistical Analysis"]
+    skills: ["SQL", "Data Visualization", "ETL", "Business Analysis", "Statistical Analysis"],
+    roadmap: [
+      "Learn SQL and basic data manipulation",
+      "Understand data visualization tools (e.g., Tableau, Power BI)",
+      "Get familiar with ETL processes",
+      "Develop business analysis skills",
+      "Master advanced statistical analysis techniques"
+    ]
   }
 ];

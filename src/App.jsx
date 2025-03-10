@@ -9,6 +9,9 @@ import Results from "./pages/Results";
 import TestAnalytics from "./pages/TestAnalytics";
 import AuthPage from "./pages/AuthPage";
 import { LogIn, Menu, X } from "lucide-react";
+import SkillAssessmentTest from './pages/SkillAssessmentTest';
+import SkillAssessmentInstructions from './pages/SkillAssessmentInstructions';
+import SkillAssessmentResults from './pages/SkillAssessmentResults';
 
 function App() {
   const { isLoggedIn, setIsLoggedIn } = useAuth();
@@ -24,7 +27,7 @@ function App() {
   return (
     <Router>
       <TestProvider>
-        <div className="min-h-screen bg-gray-50">
+        <div className="flex flex-col min-h-screen">
           <nav className="bg-white shadow-sm">
             <div className="max-w-6xl mx-auto px-4">
               <div className="flex justify-between h-16">
@@ -74,7 +77,7 @@ function App() {
             </div>
           </nav>
 
-          <main>
+          <main className="flex-grow bg-gray-50">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/explore" element={<CareerExploration />} />
@@ -82,6 +85,9 @@ function App() {
               <Route path="/results" element={<ProtectedRoute><Results /></ProtectedRoute>} />
               <Route path="/analysis" element={<ProtectedRoute><TestAnalytics /></ProtectedRoute>} />
               <Route path="/auth" element={<AuthPage />} />
+              <Route path="/skill-assessment/instructions/:careerId" element={<SkillAssessmentInstructions />} />
+              <Route path="/skill-assessment/:careerId" element={<ProtectedRoute><SkillAssessmentTest /></ProtectedRoute>} />
+              <Route path="/skill-assessment/results" element={<ProtectedRoute><SkillAssessmentResults /></ProtectedRoute>} />
             </Routes>
           </main>
         </div>
