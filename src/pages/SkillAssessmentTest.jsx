@@ -4,7 +4,7 @@ import { getQuestionsForCareer } from '../data/skillAssessmentQuestions';
 import { careers } from '../data/careers';
 import SkillAssessmentQuestion from '../components/SkillAssessmentQuestion';
 
-function SkillAssessmentTest() {
+function SkillAssessmentTest({ setNavbarVisible }) {
   const { careerId } = useParams();
   const navigate = useNavigate();
   const [career, setCareer] = useState(null);
@@ -15,6 +15,8 @@ function SkillAssessmentTest() {
   const [timeLeft, setTimeLeft] = useState(300); // 5 minutes in seconds
 
   useEffect(() => {
+    setNavbarVisible(false); // Hide navbar when the test starts
+
     // Find the career by ID
     const selectedCareer = careers.find(c => c.id === parseInt(careerId));
     if (selectedCareer) {
@@ -26,7 +28,11 @@ function SkillAssessmentTest() {
       // Redirect if career not found
       navigate('/');
     }
-  }, [careerId, navigate]);
+
+    return () => {
+      setNavbarVisible(true); // Show navbar when the test ends
+    };
+  }, [careerId, navigate, setNavbarVisible]);
 
   // Fullscreen logic
   useEffect(() => {

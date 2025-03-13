@@ -6,7 +6,7 @@ import LoadingSpinner from '../components/LoadingSpinner';
 import Snackbar from '../components/Snackbar';
 import { useNavigate } from 'react-router-dom';
 
-const PersonalityTest = () => {
+const PersonalityTest = ({ setNavbarVisible }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const navigate = useNavigate()
   const [snackbar, setSnackbar] = useState({
@@ -49,12 +49,15 @@ const PersonalityTest = () => {
     document.addEventListener('fullscreenchange', handleFullscreenChange);
     document.addEventListener('visibilitychange', handleTabChange);
 
+    setNavbarVisible(false); // Hide navbar when the test starts
+
     return () => {
       document.removeEventListener('fullscreenchange', handleFullscreenChange);
       document.removeEventListener('visibilitychange', handleTabChange);
       exitFullscreen(); // Ensure fullscreen exits on unmount
+      setNavbarVisible(true); // Show navbar when the test ends
     };
-  }, []);
+  }, [setNavbarVisible]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
